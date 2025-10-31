@@ -5,14 +5,85 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>캐치티니핑 캐릭터 도감</title>
   <style>
-    body { font-family: 'Pretendard', Arial, sans-serif; background: #fffbfe; margin: 0; color: #353535;}
-    header { background: linear-gradient(90deg, #ffbee8 0%, #97e3ff 100%); padding: 2rem; text-align: center;}
-    header h1 { font-size: 2.5rem; margin: 0 0 8px 0;}
-    header p { font-size: 1.2rem;}
-    .character-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin: 2rem 0;}
-    .character-card { background: #fff; border-radius: 24px; box-shadow: 0 4px 16px #f3d7ffaa; width: 320px; padding: 1.2rem; text-align: center;}
-    .character-card img { width: 140px; height: 140px; border-radius: 50%; background: #f6f6fe; object-fit: cover; }
-    .character-card h2 { font-size: 1.6rem; color: #83c6ff; margin: 10px 0 0 0;}
-    .character-card p { font-size: 1.08rem; margin: 10px 0;}
-    .video-wrap { margin: 1.2rem 0; }
-    .video-wrap
+    body { font-family: 'Pretendard', Arial, sans-serif; background: #f9fbff; margin: 0; color: #232323;}
+    header { background: linear-gradient(90deg, #ffbee8 0%, #97e3ff 100%); padding: 2.2rem; text-align: center;}
+    header h1 { font-size: 2.4rem; margin: 0 0 10px 0;}
+    header p { font-size: 1.15rem;}
+    .character-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin: 2.2rem 0;}
+    .character-card { background: #fff; border-radius: 24px; box-shadow: 0 2px 16px #e9eefa88; width: 320px; padding: 1.4rem; text-align: center;}
+    .character-card img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid #e5e5fa; }
+    .character-card h2 { font-size: 1.5rem; margin: 10px 0 6px 0; color: #56c3f7;}
+    .character-card p { font-size: 1.06rem; margin: 10px 0;}
+    .video-wrap { margin: 1rem 0; }
+    .video-wrap video { width: 90%; height: 180px; border-radius: 18px; background: #f2f2f7;}
+    @media (max-width:800px){
+      .character-list { flex-direction: column; align-items: center;}
+    }
+    @media (max-width:430px){
+      .character-card img { width: 90px; height: 90px;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>캐치티니핑 캐릭터 도감</h1>
+    <p>티니핑 캐릭터별 이미지, 설명, 간단 동영상을 한 곳에!</p>
+  </header>
+  <main>
+    <section class="character-list">
+
+      <!-- 러브핑 -->
+      <article class="character-card">
+        <img src="https://i.imgur.com/jjdikwy.png" alt="러브핑 이미지">
+        <h2>러브핑</h2>
+        <p>사랑을 전파하는 티니핑. 핑크색 하트가 특징이며<br>다정하고 온화한 성격을 가졌어요.</p>
+        <div class="video-wrap">
+          <video controls poster="https://i.imgur.com/jjdikwy.png">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            러브핑 동영상을 지원하지 않는 브라우저입니다.
+          </video>
+        </div>
+      </article>
+
+      <!-- 조이핑 -->
+      <article class="character-card">
+        <img src="https://i.imgur.com/n7gQAiK.png" alt="조이핑 이미지">
+        <h2>조이핑</h2>
+        <p>행복을 퍼뜨리는 티니핑.<br>항상 명랑하고 쾌활하며, 민트색으로 기쁨을 상징해요.</p>
+        <div class="video-wrap">
+          <video controls poster="https://i.imgur.com/n7gQAiK.png">
+            <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+            조이핑 동영상을 지원하지 않는 브라우저입니다.
+          </video>
+        </div>
+      </article>
+
+      <!-- 럭키핑 -->
+      <article class="character-card">
+        <img src="https://i.imgur.com/ILuGX0f.png" alt="럭키핑 이미지">
+        <h2>럭키핑</h2>
+        <p>행운의 티니핑. 세상에서 가장 귀여운 행운을<br>전해주는 노란빛 캐릭터예요.</p>
+        <div class="video-wrap">
+          <video controls poster="https://i.imgur.com/ILuGX0f.png">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            럭키핑 동영상을 지원하지 않는 브라우저입니다.
+          </video>
+        </div>
+      </article>
+      
+      <!-- 소망핑 -->
+      <article class="character-card">
+        <img src="https://i.imgur.com/l3ytA8G.png" alt="소망핑 이미지">
+        <h2>소망핑</h2>
+        <p>소망과 희망을 상징하는 티니핑.<br>진지하지만 마음 따뜻한 보라빛 친구입니다.</p>
+        <div class="video-wrap">
+          <video controls poster="https://i.imgur.com/l3ytA8G.png">
+            <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+            소망핑 동영상을 지원하지 않는 브라우저입니다.
+          </video>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
